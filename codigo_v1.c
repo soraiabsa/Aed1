@@ -97,15 +97,7 @@ int main(void){
 
     comparacoes = 0; //inicializa a variavel 
 
-    mediana = abordagemA(vetCopia, n, k); //encontar o 1 elem obriga
-
-    int M = 10;
-// (Imagine que a função que ordena o vetor_umidade já foi executada aqui)
-
-    printf("Os %d dias mais secos registraram as seguintes umidades:\n", M);
-    for (int i = 0; i < M; i++) {
-        printf("%d de umidade\n", vetor_umidade[i]);
-    }
+    mediana = abordagemA(vetCopia, n, k);
 
     int limiar_critico = (n * 90) / 100;
 
@@ -118,8 +110,3 @@ int main(void){
     return 0;
 }
 
-
-//abordagem b: pegar o vetor de registro e definir o v[0] como o pivor
-//usando o pivor como referencia, compara ele com os outros valores 
-//se o outro valor for maior permanece na direta , se for menor coloca na esquerada
-//no final va ter um vetor com os valore menore
