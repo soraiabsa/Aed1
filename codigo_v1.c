@@ -76,7 +76,6 @@ int main(void){
 
     int n;
     float mediana = 0.0;
-    int m=0;//dias mais secos
 
     printf("Informe a quantidade de registros: "); // medições feita, no máximo 10.000
     scanf("%d", &n);
