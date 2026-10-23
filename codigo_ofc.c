@@ -17,6 +17,9 @@ typedef struct {
 
 typedef float (*Consulta)(Registro[], int, int, long long *);
 
+
+/* preenche o vetor com n registros aleatorios (sensor, data, temperatura,
+  umidade entre 15 e 90 e PM2.5 entre 5 e 300)*/
 void gerarDados(Registro v[], int n) {
     for (int i = 0; i < n; i++) {
         v[i].ID_Sensor = rand() % 1000;
